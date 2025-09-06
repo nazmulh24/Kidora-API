@@ -1,18 +1,14 @@
-from django.shortcuts import get_object_or_404
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
+from rest_framework.viewsets import ModelViewSet
+from api.permissions import IsAdminOrReadOnly
 
-from product.models import Product
-from product.serializers import ProductSerializer
+from product.models import Category
+from product.serializers import CategorySerializer
 
-
-@api_view()
-def view_specific_products(request, id):
-    product = get_object_or_404(Product, pk=id)
-    serializer = ProductSerializer(product)
-    return Response(serializer.data)
+from django.db.models import Count
 
 
-@api_view()
-def view_categories(request):
-    return Response({"message": "Category"})
+class CategoryViewSet(ModelViewSet):
+    queryset = Category.objects.annotate(product_count=Count("products")).all()
+    serializer_class = CategorySerializer
+
+    permission_classes = [IsAdminOrReadOnly]

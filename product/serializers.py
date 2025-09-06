@@ -1,15 +1,13 @@
 from rest_framework import serializers
 from decimal import Decimal
+from product.models import Category
 
 
-class ProductSerializer(serializers.Serializer):
-    id = serializers.IntegerField()
-    name = serializers.CharField()
-    unit_price = serializers.DecimalField(
-        max_digits=10, decimal_places=2, source="price"
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ["id", "name", "description", "product_count"]
+
+    product_count = serializers.IntegerField(
+        read_only=True, help_text="Number of products in this category"
     )
-
-    price_with_tax = serializers.SerializerMethodField(method_name="calculate_tax")
-
-    def calculate_tax(self, product):
-        return round(product.price * Decimal(1.10), 2)
