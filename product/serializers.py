@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from decimal import Decimal
-from product.models import Category, Product, Review
+from product.models import Category, Product, ProductImage, Review
 
 from django.contrib.auth import get_user_model
 
@@ -15,9 +15,18 @@ class CategorySerializer(serializers.ModelSerializer):
     )
 
 
+class ProductImageSerializer(serializers.ModelSerializer):
+    image = serializers.ImageField()
+
+    class Meta:
+        model = ProductImage
+        fields = ["id", "image"]
+
+
 class ProductSerializer(serializers.ModelSerializer):
     total_reviews = serializers.SerializerMethodField()
     average_rating = serializers.SerializerMethodField()
+    images = ProductImageSerializer(many=True, read_only=True)
 
     class Meta:
         model = Product
@@ -31,9 +40,9 @@ class ProductSerializer(serializers.ModelSerializer):
             "stock",
             "category",
             "price_with_tax",
-            "image",
             "total_reviews",
             "average_rating",
+            "images",
         ]
 
     def get_total_reviews(self, obj):
