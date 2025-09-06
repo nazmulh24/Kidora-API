@@ -5,14 +5,22 @@ from users.models import User
 
 class CustomUserAdmin(UserAdmin):
     model = User
-    list_display = ("email", "first_name", "last_name", "is_active")
+    list_display = ("email", "first_name", "last_name", "is_active", "is_staff")
     list_filter = ("is_staff", "is_active")
 
     fieldsets = (
         (None, {"fields": ("email", "password")}),
         (
             "Personal Info",
-            {"fields": ("first_name", "last_name", "address", "phone_number")},
+            {
+                "fields": (
+                    "first_name",
+                    "last_name",
+                    "profile_picture",
+                    "address",
+                    "phone_number",
+                )
+            },
         ),
         (
             "Permissions",
@@ -34,7 +42,14 @@ class CustomUserAdmin(UserAdmin):
             None,
             {
                 "classes": ("wide",),
-                "fields": ("email", "password1", "password2", "is_staff", "is_active"),
+                "fields": (
+                    "email",
+                    "password1",
+                    "password2",
+                    "profile_picture",
+                    "is_staff",
+                    "is_active",
+                ),
             },
         ),
     )
