@@ -4,10 +4,11 @@ from django_filters.rest_framework import DjangoFilterBackend
 
 from api.permissions import IsAdminOrReadOnly
 
+from product.permissions import IsReviewAuthorOrReadonly
 from product.paginations import DefaultPagination
 from product.filters import ProductFilter
-from product.models import Category, Product
-from product.serializers import CategorySerializer, ProductSerializer
+from product.models import Category, Product, Review
+from product.serializers import CategorySerializer, ProductSerializer, ReviewSerializer
 
 from django.db.models import Count
 
@@ -46,3 +47,17 @@ class ProductViewSet(ModelViewSet):
     def create(self, request, *args, **kwargs):
         """Only authenticated admin can create product"""
         return super().create(request, *args, **kwargs)
+
+
+class ReviewViewSet(ModelViewSet):
+    serializer_class = ReviewSerializer
+    permission_classes = [IsReviewAuthorOrReadonly]
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+    def get_queryset(self):
+        return Review.objects.filter(product_id=self.kwargs.get("product_pk"))
+
+    def get_serializer_context(self):
+        return {"product_id": self.kwargs.get("product_pk")}

@@ -1,4 +1,6 @@
 from django.db import models
+from django.conf import settings
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class Category(models.Model):
@@ -41,3 +43,23 @@ class Product(models.Model):
         ordering = ["-created_at"]
         verbose_name = "Product"
         verbose_name_plural = "Products"
+
+
+class Review(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
+    rating = models.DecimalField(
+        max_digits=2,
+        decimal_places=1,
+        validators=[MinValueValidator(1.0), MaxValueValidator(5.0)],
+    )
+    comment = models.TextField()
+    image = models.ImageField(upload_to="reviews/images", blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"Review of {self.product.name} by {self.user.first_name} {self.user.last_name}"
