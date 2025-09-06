@@ -1,4 +1,6 @@
 from django.db import models
+from uuid import uuid4
+
 from users.models import User
 from product.models import Product
 
@@ -22,6 +24,7 @@ class Wishlist(models.Model):
 class Cart(models.Model):
     """User's shopping cart."""
 
+    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="cart")
     created_at = models.DateTimeField(auto_now_add=True)
 
