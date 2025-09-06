@@ -45,8 +45,9 @@ class ProductSerializer(serializers.ModelSerializer):
             "images",
             "video_url",
         ]
+
     def create(self, validated_data):
-        images_data = validated_data.pop('images', [])
+        images_data = validated_data.pop("images", [])
         product = Product.objects.create(**validated_data)
         for image_data in images_data:
             ProductImage.objects.create(product=product, **image_data)
