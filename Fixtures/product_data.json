@@ -1,0 +1,657 @@
+[
+  {
+    "model": "product.Category",
+    "pk": 1,
+    "fields": {
+      "name": "Women",
+      "description": "Women's clothing and accessories from Kidora"
+    }
+  },
+  {
+    "model": "product.Category",
+    "pk": 2,
+    "fields": {
+      "name": "Men",
+      "description": "Men's clothing and accessories from Kidora"
+    }
+  },
+  {
+    "model": "product.Category",
+    "pk": 3,
+    "fields": {
+      "name": "Kids",
+      "description": "Kids' clothing and accessories from Kidora"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 1,
+    "fields": {
+      "name": "Elegant Silk Saree",
+      "description": "Beautiful silk saree with traditional patterns.",
+      "price": "2499.00",
+      "stock": 20,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 2,
+    "fields": {
+      "name": "Designer Kurti",
+      "description": "Trendy designer kurti for casual and party wear.",
+      "price": "1299.00",
+      "stock": 35,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 3,
+    "fields": {
+      "name": "Cotton Palazzo Set",
+      "description": "Comfortable cotton palazzo set for daily use.",
+      "price": "999.00",
+      "stock": 40,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 4,
+    "fields": {
+      "name": "Embroidered Dupatta",
+      "description": "Elegant dupatta with fine embroidery.",
+      "price": "499.00",
+      "stock": 50,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 5,
+    "fields": {
+      "name": "Party Gown",
+      "description": "Stylish party gown for special occasions.",
+      "price": "1899.00",
+      "stock": 15,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 6,
+    "fields": {
+      "name": "Chiffon Scarf",
+      "description": "Lightweight chiffon scarf in vibrant colors.",
+      "price": "299.00",
+      "stock": 60,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 7,
+    "fields": {
+      "name": "Formal Blazer",
+      "description": "Classic formal blazer for women.",
+      "price": "1599.00",
+      "stock": 18,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 8,
+    "fields": {
+      "name": "Denim Trucker Jacket",
+      "description": "Trendy denim trucker jacket for a casual look.",
+      "price": "1399.00",
+      "stock": 25,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 9,
+    "fields": {
+      "name": "Printed Maxi Dress",
+      "description": "Flowy printed maxi dress for summer.",
+      "price": "1199.00",
+      "stock": 30,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 10,
+    "fields": {
+      "name": "Office Wear Shirt",
+      "description": "Smart office wear shirt for women.",
+      "price": "799.00",
+      "stock": 45,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 11,
+    "fields": {
+      "name": "Casual Trousers",
+      "description": "Comfortable casual trousers for daily use.",
+      "price": "899.00",
+      "stock": 38,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 12,
+    "fields": {
+      "name": "Woolen Cardigan",
+      "description": "Warm woolen cardigan for winter.",
+      "price": "1099.00",
+      "stock": 22,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 13,
+    "fields": {
+      "name": "Ethnic Skirt",
+      "description": "Colorful ethnic skirt for festive occasions.",
+      "price": "799.00",
+      "stock": 27,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 14,
+    "fields": {
+      "name": "Linen Pants",
+      "description": "Breathable linen pants for summer comfort.",
+      "price": "999.00",
+      "stock": 33,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 15,
+    "fields": {
+      "name": "Classic Black Dress",
+      "description": "Timeless classic black dress for all occasions.",
+      "price": "1499.00",
+      "stock": 19,
+      "image": null,
+      "category": 1,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+
+  {
+    "model": "product.Product",
+    "pk": 16,
+    "fields": {
+      "name": "Formal White Shirt",
+      "description": "Classic formal white shirt for men.",
+      "price": "899.00",
+      "stock": 30,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 17,
+    "fields": {
+      "name": "Slim Fit Jeans",
+      "description": "Trendy slim fit jeans for a modern look.",
+      "price": "1199.00",
+      "stock": 25,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 18,
+    "fields": {
+      "name": "Cotton Polo T-Shirt",
+      "description": "Comfortable cotton polo t-shirt for men.",
+      "price": "699.00",
+      "stock": 40,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 19,
+    "fields": {
+      "name": "Checked Casual Shirt",
+      "description": "Casual checked shirt for everyday wear.",
+      "price": "799.00",
+      "stock": 35,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 20,
+    "fields": {
+      "name": "Classic Denim Jacket",
+      "description": "Classic denim jacket for men.",
+      "price": "1499.00",
+      "stock": 20,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 21,
+    "fields": {
+      "name": "Formal Trousers",
+      "description": "Elegant formal trousers for office wear.",
+      "price": "999.00",
+      "stock": 28,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 22,
+    "fields": {
+      "name": "Leather Belt",
+      "description": "Premium quality leather belt for men.",
+      "price": "499.00",
+      "stock": 50,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 23,
+    "fields": {
+      "name": "Winter Sweater",
+      "description": "Warm winter sweater for men.",
+      "price": "1299.00",
+      "stock": 18,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 24,
+    "fields": {
+      "name": "Sports Shorts",
+      "description": "Comfortable sports shorts for workouts.",
+      "price": "599.00",
+      "stock": 32,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 25,
+    "fields": {
+      "name": "Graphic Tee",
+      "description": "Trendy graphic tee for casual outings.",
+      "price": "499.00",
+      "stock": 45,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 26,
+    "fields": {
+      "name": "Cotton Kurta",
+      "description": "Traditional cotton kurta for men.",
+      "price": "899.00",
+      "stock": 22,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 27,
+    "fields": {
+      "name": "Cargo Pants",
+      "description": "Functional cargo pants with multiple pockets.",
+      "price": "1099.00",
+      "stock": 27,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 28,
+    "fields": {
+      "name": "Woolen Muffler",
+      "description": "Soft woolen muffler for winter.",
+      "price": "399.00",
+      "stock": 33,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 29,
+    "fields": {
+      "name": "Classic Suit",
+      "description": "Classic suit for formal occasions.",
+      "price": "2999.00",
+      "stock": 19,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 30,
+    "fields": {
+      "name": "Men's Hooded Jacket",
+      "description": "Warm hooded jacket for men, perfect for winter.",
+      "price": "1799.00",
+      "stock": 21,
+      "image": null,
+      "category": 2,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 31,
+    "fields": {
+      "name": "Kids Graphic Tee",
+      "description": "Fun graphic tee for kids.",
+      "price": "349.00",
+      "stock": 40,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 32,
+    "fields": {
+      "name": "Boys Cargo Shorts",
+      "description": "Durable cargo shorts for boys.",
+      "price": "399.00",
+      "stock": 35,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 33,
+    "fields": {
+      "name": "Girls Summer Dress",
+      "description": "Light and colorful summer dress for girls.",
+      "price": "599.00",
+      "stock": 28,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 34,
+    "fields": {
+      "name": "Kids Rain Boots",
+      "description": "Waterproof rain boots for kids.",
+      "price": "299.00",
+      "stock": 22,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 35,
+    "fields": {
+      "name": "Boys Sports Set",
+      "description": "Active sports set for boys.",
+      "price": "699.00",
+      "stock": 30,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 36,
+    "fields": {
+      "name": "Girls Leggings",
+      "description": "Stretchy leggings for girls.",
+      "price": "349.00",
+      "stock": 36,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 37,
+    "fields": {
+      "name": "Kids Woolen Sweater",
+      "description": "Warm woolen sweater for kids.",
+      "price": "499.00",
+      "stock": 25,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 38,
+    "fields": {
+      "name": "Girls Party Frock",
+      "description": "Beautiful party frock for girls.",
+      "price": "799.00",
+      "stock": 32,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 39,
+    "fields": {
+      "name": "Kids Denim Jacket",
+      "description": "Trendy denim jacket for boys.",
+      "price": "899.00",
+      "stock": 18,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 40,
+    "fields": {
+      "name": "Kids Pajama Set",
+      "description": "Soft pajama set for kids' bedtime.",
+      "price": "399.00",
+      "stock": 27,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 41,
+    "fields": {
+      "name": "Girls Cardigan",
+      "description": "Cozy cardigan for girls.",
+      "price": "499.00",
+      "stock": 33,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 42,
+    "fields": {
+      "name": "Boys Track Pants",
+      "description": "Comfortable track pants for boys.",
+      "price": "399.00",
+      "stock": 29,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 43,
+    "fields": {
+      "name": "Kids Beanie",
+      "description": "Warm beanie for kids' winter days.",
+      "price": "199.00",
+      "stock": 31,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 44,
+    "fields": {
+      "name": "Girls Skirt",
+      "description": "Pretty skirt for girls' outings.",
+      "price": "349.00",
+      "stock": 21,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  },
+  {
+    "model": "product.Product",
+    "pk": 45,
+    "fields": {
+      "name": "Kids School Bag",
+      "description": "Colorful school bag for kids.",
+      "price": "599.00",
+      "stock": 26,
+      "image": null,
+      "category": 3,
+      "created_at": "2025-02-05T02:45:04.629624",
+      "updated_at": "2025-02-08T02:45:04.629624"
+    }
+  }
+]
