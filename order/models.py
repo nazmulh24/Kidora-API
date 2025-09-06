@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MinValueValidator
 from uuid import uuid4
 
 from users.models import User
@@ -45,17 +46,18 @@ class CartItem(models.Model):
 
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name="items")
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    quantity = models.PositiveIntegerField()
+    quantity = models.PositiveIntegerField(validators=[MinValueValidator(1)])
+
+    class Meta:
+        unique_together = [["cart", "product"]]
+        verbose_name = "Cart Item"
+        verbose_name_plural = "Cart Items"
 
     def __str__(self):
         return f"{self.quantity} x {self.product.name}"
 
     def line_total(self):
         return self.quantity * self.product.price
-
-    class Meta:
-        verbose_name = "Cart Item"
-        verbose_name_plural = "Cart Items"
 
 
 class Order(models.Model):
