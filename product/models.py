@@ -3,6 +3,8 @@ from django.conf import settings
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db.models import Avg
 
+from product.validators import validate_file_size
+
 
 class Category(models.Model):
     """Product category."""
@@ -43,7 +45,6 @@ class Product(models.Model):
     size = models.CharField(max_length=5, choices=STATUS_CHOICES, default=M)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.PositiveIntegerField()
-    image = models.ImageField(upload_to="products/images", blank=True, null=True)
     category = models.ForeignKey(
         Category, on_delete=models.CASCADE, related_name="products"
     )
@@ -71,6 +72,23 @@ class Product(models.Model):
         ordering = ["-created_at"]
         verbose_name = "Product"
         verbose_name_plural = "Products"
+
+
+class ProductImage(models.Model):
+    product = models.ForeignKey(
+        Product,
+        on_delete=models.CASCADE,
+        related_name="images",
+    )
+    image = models.ImageField(
+        upload_to="products/images",
+        validators=[validate_file_size],
+        blank=True,
+        null=True,
+    )
+
+    def __str__(self):
+        return f"Image for {self.product.name}"
 
 
 class Review(models.Model):
