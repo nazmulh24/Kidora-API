@@ -26,7 +26,7 @@ class ProductImageSerializer(serializers.ModelSerializer):
 class ProductSerializer(serializers.ModelSerializer):
     total_reviews = serializers.SerializerMethodField()
     average_rating = serializers.SerializerMethodField()
-    images = ProductImageSerializer(many=True, read_only=True)
+    images = ProductImageSerializer(many=True, required=False)
 
     class Meta:
         model = Product
@@ -45,6 +45,12 @@ class ProductSerializer(serializers.ModelSerializer):
             "images",
             "video_url",
         ]
+    def create(self, validated_data):
+        images_data = validated_data.pop('images', [])
+        product = Product.objects.create(**validated_data)
+        for image_data in images_data:
+            ProductImage.objects.create(product=product, **image_data)
+        return product
 
     def get_total_reviews(self, obj):
         return obj.total_reviews()
@@ -85,7 +91,7 @@ class ReviewImageSerializer(serializers.ModelSerializer):
 
 class ReviewSerializer(serializers.ModelSerializer):
     user = serializers.SerializerMethodField(method_name="get_user")
-    images = ReviewImageSerializer(many=True, read_only=True)
+    images = ReviewImageSerializer(many=True, required=False)
 
     class Meta:
         model = Review
@@ -96,6 +102,9 @@ class ReviewSerializer(serializers.ModelSerializer):
         return SimpleUserSerializer(obj.user).data
 
     def create(self, validated_data):
+        images_data = validated_data.pop("images", [])
         product_id = self.context["product_id"]
         review = Review.objects.create(product_id=product_id, **validated_data)
+        for image_data in images_data:
+            ReviewImage.objects.create(review=review, **image_data)
         return review
