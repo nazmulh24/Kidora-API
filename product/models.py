@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.core.validators import MinValueValidator, MaxValueValidator
+from django.db.models import Avg
 
 
 class Category(models.Model):
@@ -21,8 +22,25 @@ class Category(models.Model):
 class Product(models.Model):
     """Product in the store."""
 
-    name = models.CharField(max_length=200)
+    XS = "XS"
+    S = "S"
+    M = "M"
+    L = "L"
+    XL = "XL"
+    XXL = "XXL"
+
+    STATUS_CHOICES = [
+        (XS, "XS"),
+        (S, "S"),
+        (M, "M"),
+        (L, "L"),
+        (XL, "XL"),
+        (XXL, "XXL"),
+    ]
+
+    name = models.CharField(max_length=150)
     description = models.TextField(blank=True, null=True)
+    size = models.CharField(max_length=5, choices=STATUS_CHOICES, default=M)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.PositiveIntegerField()
     image = models.ImageField(upload_to="products/images", blank=True, null=True)
@@ -38,6 +56,16 @@ class Product(models.Model):
     def is_in_stock(self):
         """Return True if the product is in stock."""
         return self.stock > 0
+
+    def total_reviews(self):
+        """Return the total number of reviews for this product."""
+        return self.review_set.count()
+
+    def average_rating(self):
+        """Return the average rating for this product, or 0 if no reviews."""
+
+        avg = self.review_set.aggregate(avg_rating=Avg("rating"))["avg_rating"]
+        return avg or 0
 
     class Meta:
         ordering = ["-created_at"]

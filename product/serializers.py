@@ -16,19 +16,31 @@ class CategorySerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
+    total_reviews = serializers.SerializerMethodField()
+    average_rating = serializers.SerializerMethodField()
+
     class Meta:
         model = Product
         fields = [
             "id",
             "name",
             "description",
+            "size",
             "price",
             "is_in_stock",
             "stock",
             "category",
             "price_with_tax",
             "image",
+            "total_reviews",
+            "average_rating",
         ]
+
+    def get_total_reviews(self, obj):
+        return obj.total_reviews()
+
+    def get_average_rating(self, obj):
+        return obj.average_rating()
 
     price_with_tax = serializers.SerializerMethodField(method_name="calculate_tax")
 
