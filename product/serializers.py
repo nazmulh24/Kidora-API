@@ -43,6 +43,7 @@ class ProductSerializer(serializers.ModelSerializer):
             "total_reviews",
             "average_rating",
             "images",
+            "video_url",
         ]
 
     def get_total_reviews(self, obj):

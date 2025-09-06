@@ -45,6 +45,11 @@ class Product(models.Model):
     size = models.CharField(max_length=5, choices=STATUS_CHOICES, default=M)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.PositiveIntegerField()
+    video_url = models.URLField(
+        blank=True,
+        null=True,
+        help_text="Paste a YouTube video URL here. Example: https://www.youtube.com/watch?v=xxxxxx",
+    )
     category = models.ForeignKey(
         Category, on_delete=models.CASCADE, related_name="products"
     )
