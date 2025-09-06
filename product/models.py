@@ -109,9 +109,25 @@ class Review(models.Model):
         validators=[MinValueValidator(1.0), MaxValueValidator(5.0)],
     )
     comment = models.TextField()
-    image = models.ImageField(upload_to="reviews/images", blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f"Review of {self.product.name} by {self.user.first_name} {self.user.last_name}"
+
+
+class ReviewImage(models.Model):
+    review = models.ForeignKey(
+        Review,
+        on_delete=models.CASCADE,
+        related_name="images",
+    )
+    image = models.ImageField(
+        upload_to="reviews/images",
+        validators=[validate_file_size],
+        blank=True,
+        null=True,
+    )
+
+    def __str__(self):
+        return f"Image for review {self.review.id}"

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from decimal import Decimal
-from product.models import Category, Product, ProductImage, Review
+from product.models import Category, Product, ProductImage, Review, ReviewImage
 
 from django.contrib.auth import get_user_model
 
@@ -75,12 +75,21 @@ class SimpleUserSerializer(serializers.ModelSerializer):
         return obj.get_full_name()
 
 
+class ReviewImageSerializer(serializers.ModelSerializer):
+    image = serializers.ImageField()
+
+    class Meta:
+        model = ReviewImage
+        fields = ["id", "image"]
+
+
 class ReviewSerializer(serializers.ModelSerializer):
     user = serializers.SerializerMethodField(method_name="get_user")
+    images = ReviewImageSerializer(many=True, read_only=True)
 
     class Meta:
         model = Review
-        fields = ["id", "user", "product", "rating", "comment", "image"]
+        fields = ["id", "user", "product", "rating", "comment", "images"]
         read_only_fields = ["user", "product"]
 
     def get_user(self, obj):
