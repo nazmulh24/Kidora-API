@@ -63,10 +63,11 @@ class Product(models.Model):
         return self.review_set.count()
 
     def average_rating(self):
-        """Return the average rating for this product, or 0 if no reviews."""
-
+        """Return the average rating for this product, rounded to 1 decimal or 0 if no reviews."""
         avg = self.review_set.aggregate(avg_rating=Avg("rating"))["avg_rating"]
-        return avg or 0
+        if avg is None:
+            return 0
+        return float(f"{avg:.1f}")
 
     class Meta:
         ordering = ["-created_at"]
