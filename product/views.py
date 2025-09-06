@@ -1,10 +1,16 @@
+from django.shortcuts import get_object_or_404
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
+from product.models import Product
+from product.serializers import ProductSerializer
+
 
 @api_view()
-def view_products(request):
-    return Response({"message": "Product"})
+def view_specific_products(request, id):
+    product = get_object_or_404(Product, pk=id)
+    serializer = ProductSerializer(product)
+    return Response(serializer.data)
 
 
 @api_view()
