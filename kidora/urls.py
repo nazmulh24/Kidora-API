@@ -6,6 +6,6 @@ from .views import api_root_view
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", api_root_view),  # --> Opening Page...
+    path("", api_root_view),
     path("api/v1/", include("api.urls"), name="api-root"),
 ] + debug_toolbar_urls()
