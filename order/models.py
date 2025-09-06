@@ -26,7 +26,7 @@ class Cart(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Cart of {self.user.username}"
+        return f"Cart of {self.user.email}"
 
     def total_items(self):
         return sum(item.quantity for item in self.items.all())
@@ -75,7 +75,7 @@ class Order(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"Order {self.id} by {self.user.username}"
+        return f"Order {self.id} by {self.user.email}"
 
     def item_count(self):
         return sum(item.quantity for item in self.items.all())
