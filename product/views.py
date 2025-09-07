@@ -1,3 +1,7 @@
+from rest_framework import serializers
+from rest_framework.decorators import action
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django_filters.rest_framework import DjangoFilterBackend
@@ -10,6 +14,9 @@ from product.filters import ProductFilter
 from product.models import Category, Product, Review
 from product.serializers import CategorySerializer, ProductSerializer, ReviewSerializer
 
+from order.models import Wishlist
+from order.serializers import WishlistProductSerializer
+
 from django.db.models import Count
 
 
@@ -18,6 +25,10 @@ class CategoryViewSet(ModelViewSet):
     serializer_class = CategorySerializer
 
     permission_classes = [IsAdminOrReadOnly]
+
+
+class EmptySerializer(serializers.Serializer):
+    pass
 
 
 class ProductViewSet(ModelViewSet):
@@ -47,6 +58,50 @@ class ProductViewSet(ModelViewSet):
     def create(self, request, *args, **kwargs):
         """Only authenticated admin can create product"""
         return super().create(request, *args, **kwargs)
+
+    @action(
+        detail=True,
+        methods=["post"],
+        permission_classes=[IsAuthenticated],
+        serializer_class=EmptySerializer,
+    )
+    def add_to_wishlist(self, request, pk=None):
+        """Add this product to the authenticated user's wishlist."""
+        product = self.get_object()
+        wishlist, _ = Wishlist.objects.get_or_create(user=request.user)
+        if wishlist.products.filter(pk=product.pk).exists():
+            return Response(
+                {"success": False, "message": "Product already in wishlist."},
+                status=200,
+            )
+        wishlist.products.add(product)
+        return Response(
+            {"success": True, "message": "Product added to wishlist."}, status=201
+        )
+
+    @action(
+        detail=True,
+        methods=["post"],
+        permission_classes=[IsAuthenticated],
+        serializer_class=EmptySerializer,
+    )
+    def remove_from_wishlist(self, request, pk=None):
+        """Remove this product from the authenticated user's wishlist."""
+        product = self.get_object()
+        wishlist, _ = Wishlist.objects.get_or_create(user=request.user)
+        if not wishlist.products.filter(pk=product.pk).exists():
+            return Response(
+                {"success": False, "message": "Product not in wishlist."}, status=200
+            )
+        wishlist.products.remove(product)
+        return Response(
+            {"success": True, "message": "Product removed from wishlist."}, status=200
+        )
+
+    def get_wishlist_response(self, wishlist):
+        products = wishlist.products.all()
+        serializer = WishlistProductSerializer(products, many=True)
+        return Response(serializer.data)
 
 
 class ReviewViewSet(ModelViewSet):

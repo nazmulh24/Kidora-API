@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from decimal import Decimal
 from product.models import Category, Product, ProductImage, Review, ReviewImage
+from order.models import Wishlist
 
 from django.contrib.auth import get_user_model
 
@@ -27,6 +28,7 @@ class ProductSerializer(serializers.ModelSerializer):
     total_reviews = serializers.SerializerMethodField()
     average_rating = serializers.SerializerMethodField()
     images = ProductImageSerializer(many=True, required=False)
+    is_in_wishlist = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
@@ -44,7 +46,14 @@ class ProductSerializer(serializers.ModelSerializer):
             "average_rating",
             "images",
             "video_url",
+            "is_in_wishlist",
         ]
+
+    def get_is_in_wishlist(self, obj):
+        user = self.context.get("request").user if self.context.get("request") else None
+        if user and user.is_authenticated:
+            return Wishlist.objects.filter(user=user, products=obj).exists()
+        return False
 
     def create(self, validated_data):
         images_data = validated_data.pop("images", [])
