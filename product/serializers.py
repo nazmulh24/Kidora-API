@@ -31,12 +31,18 @@ class ProductImageSerializer(serializers.ModelSerializer):
         fields = ["id", "image"]
 
 
+class ProductStockSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ProductStock
+        fields = [ "size", "price", "stock"]
+
+
 class ProductSerializer(serializers.ModelSerializer):
     total_reviews = serializers.SerializerMethodField()
     average_rating = serializers.SerializerMethodField()
     images = ProductImageSerializer(many=True, required=False)
     is_in_wishlist = serializers.SerializerMethodField()
-    sizes = serializers.SerializerMethodField()
+    stocks = ProductStockSerializer(many=True, read_only=True)
 
     class Meta:
         model = Product
@@ -44,7 +50,7 @@ class ProductSerializer(serializers.ModelSerializer):
             "id",
             "name",
             "description",
-            "sizes",
+            "stocks",
             "is_in_stock",
             "total_stock",
             "category",
@@ -54,15 +60,6 @@ class ProductSerializer(serializers.ModelSerializer):
             "video_url",
             "is_in_wishlist",
         ]
-
-    def get_sizes(self, obj):
-        """Return all sizes; missing ones should be null"""
-        all_sizes = ["XS", "S", "M", "L", "XL", "XXL"]
-        stocks = {
-            stock.size: {"price": stock.price, "stock": stock.stock}
-            for stock in obj.stocks.all()
-        }
-        return {size: stocks.get(size, None) for size in all_sizes}
 
     def get_is_in_wishlist(self, obj):
         user = self.context.get("request").user if self.context.get("request") else None
