@@ -31,7 +31,6 @@
       "description": "Beautiful silk saree with traditional patterns.",
       "price": "2499.00",
       "stock": 20,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -45,7 +44,6 @@
       "description": "Trendy designer kurti for casual and party wear.",
       "price": "1299.00",
       "stock": 35,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -59,7 +57,6 @@
       "description": "Comfortable cotton palazzo set for daily use.",
       "price": "999.00",
       "stock": 40,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -73,7 +70,6 @@
       "description": "Elegant dupatta with fine embroidery.",
       "price": "499.00",
       "stock": 50,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -87,7 +83,6 @@
       "description": "Stylish party gown for special occasions.",
       "price": "1899.00",
       "stock": 15,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -101,7 +96,6 @@
       "description": "Lightweight chiffon scarf in vibrant colors.",
       "price": "299.00",
       "stock": 60,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -115,7 +109,6 @@
       "description": "Classic formal blazer for women.",
       "price": "1599.00",
       "stock": 18,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -129,7 +122,6 @@
       "description": "Trendy denim trucker jacket for a casual look.",
       "price": "1399.00",
       "stock": 25,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -143,7 +135,6 @@
       "description": "Flowy printed maxi dress for summer.",
       "price": "1199.00",
       "stock": 30,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -157,7 +148,6 @@
       "description": "Smart office wear shirt for women.",
       "price": "799.00",
       "stock": 45,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -171,7 +161,6 @@
       "description": "Comfortable casual trousers for daily use.",
       "price": "899.00",
       "stock": 38,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -185,7 +174,6 @@
       "description": "Warm woolen cardigan for winter.",
       "price": "1099.00",
       "stock": 22,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -199,7 +187,6 @@
       "description": "Colorful ethnic skirt for festive occasions.",
       "price": "799.00",
       "stock": 27,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -213,7 +200,6 @@
       "description": "Breathable linen pants for summer comfort.",
       "price": "999.00",
       "stock": 33,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -227,7 +213,6 @@
       "description": "Timeless classic black dress for all occasions.",
       "price": "1499.00",
       "stock": 19,
-      "image": null,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -242,7 +227,6 @@
       "description": "Classic formal white shirt for men.",
       "price": "899.00",
       "stock": 30,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -256,7 +240,6 @@
       "description": "Trendy slim fit jeans for a modern look.",
       "price": "1199.00",
       "stock": 25,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -270,7 +253,6 @@
       "description": "Comfortable cotton polo t-shirt for men.",
       "price": "699.00",
       "stock": 40,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -284,7 +266,6 @@
       "description": "Casual checked shirt for everyday wear.",
       "price": "799.00",
       "stock": 35,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -298,7 +279,6 @@
       "description": "Classic denim jacket for men.",
       "price": "1499.00",
       "stock": 20,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -312,7 +292,6 @@
       "description": "Elegant formal trousers for office wear.",
       "price": "999.00",
       "stock": 28,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -326,7 +305,6 @@
       "description": "Premium quality leather belt for men.",
       "price": "499.00",
       "stock": 50,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -340,7 +318,6 @@
       "description": "Warm winter sweater for men.",
       "price": "1299.00",
       "stock": 18,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -354,7 +331,6 @@
       "description": "Comfortable sports shorts for workouts.",
       "price": "599.00",
       "stock": 32,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -368,7 +344,6 @@
       "description": "Trendy graphic tee for casual outings.",
       "price": "499.00",
       "stock": 45,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -382,7 +357,6 @@
       "description": "Traditional cotton kurta for men.",
       "price": "899.00",
       "stock": 22,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -396,7 +370,6 @@
       "description": "Functional cargo pants with multiple pockets.",
       "price": "1099.00",
       "stock": 27,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -410,7 +383,6 @@
       "description": "Soft woolen muffler for winter.",
       "price": "399.00",
       "stock": 33,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -424,7 +396,6 @@
       "description": "Classic suit for formal occasions.",
       "price": "2999.00",
       "stock": 19,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -438,7 +409,6 @@
       "description": "Warm hooded jacket for men, perfect for winter.",
       "price": "1799.00",
       "stock": 21,
-      "image": null,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -452,7 +422,6 @@
       "description": "Fun graphic tee for kids.",
       "price": "349.00",
       "stock": 40,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -466,7 +435,6 @@
       "description": "Durable cargo shorts for boys.",
       "price": "399.00",
       "stock": 35,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -480,7 +448,6 @@
       "description": "Light and colorful summer dress for girls.",
       "price": "599.00",
       "stock": 28,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -494,7 +461,6 @@
       "description": "Waterproof rain boots for kids.",
       "price": "299.00",
       "stock": 22,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -508,7 +474,6 @@
       "description": "Active sports set for boys.",
       "price": "699.00",
       "stock": 30,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -522,7 +487,6 @@
       "description": "Stretchy leggings for girls.",
       "price": "349.00",
       "stock": 36,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -536,7 +500,6 @@
       "description": "Warm woolen sweater for kids.",
       "price": "499.00",
       "stock": 25,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -550,7 +513,6 @@
       "description": "Beautiful party frock for girls.",
       "price": "799.00",
       "stock": 32,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -564,7 +526,6 @@
       "description": "Trendy denim jacket for boys.",
       "price": "899.00",
       "stock": 18,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -578,7 +539,6 @@
       "description": "Soft pajama set for kids' bedtime.",
       "price": "399.00",
       "stock": 27,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -592,7 +552,6 @@
       "description": "Cozy cardigan for girls.",
       "price": "499.00",
       "stock": 33,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -606,7 +565,6 @@
       "description": "Comfortable track pants for boys.",
       "price": "399.00",
       "stock": 29,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -620,7 +578,6 @@
       "description": "Warm beanie for kids' winter days.",
       "price": "199.00",
       "stock": 31,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -634,7 +591,6 @@
       "description": "Pretty skirt for girls' outings.",
       "price": "349.00",
       "stock": 21,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
@@ -648,7 +604,6 @@
       "description": "Colorful school bag for kids.",
       "price": "599.00",
       "stock": 26,
-      "image": null,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
