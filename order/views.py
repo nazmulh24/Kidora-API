@@ -8,8 +8,7 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
 from rest_framework.decorators import action
 
-
-from order.models import Cart, CartItem, Order
+from order.models import Cart, CartItem, Order, Wishlist
 from order.serializers import (
     CartSerializer,
     AddCartItemSerializer,
@@ -18,8 +17,12 @@ from order.serializers import (
     OrderSerializer,
     OrderCreateSerializer,
     UpdateOrderSerializer,
+    WishlistSerializer,
+    WishlistProductSerializer,
 )
 from order import serializers as orderSz
+
+from product.models import Product
 
 
 class CartViewSet(
@@ -116,3 +119,46 @@ class OrderViewSet(ModelViewSet):
         if getattr(self, "swagger_fake_view", False):
             return super().get_serializer_context()
         return {"user_id": self.request.user.id, "user": self.request.user}
+
+
+class WishlistViewSet(GenericViewSet):
+    serializer_class = WishlistSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        """DRF requirement, not used directly."""
+        return Wishlist.objects.filter(user=self.request.user)
+
+    def get_object(self):
+        """Always return the current user's wishlist, creating it if needed."""
+        wishlist, _ = Wishlist.objects.get_or_create(user=self.request.user)
+        return wishlist
+
+    def list(self, request, *args, **kwargs):
+        """GET /wishlists/ - List all products in the user's wishlist."""
+        wishlist = self.get_object()
+        products = wishlist.products.all()
+        serializer = WishlistProductSerializer(products, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None, *args, **kwargs):
+        """GET /wishlists/{product_id}/ - Get a single product from the user's wishlist."""
+        wishlist = self.get_object()
+        try:
+            product = wishlist.products.get(pk=pk)
+        except Product.DoesNotExist:
+            return Response({"detail": "Product not found in wishlist."}, status=404)
+        serializer = WishlistProductSerializer(product)
+        return Response(serializer.data)
+
+    def destroy(self, request, pk=None, *args, **kwargs):
+        """DELETE /wishlists/{product_id}/ - Remove a product from the user's wishlist."""
+        wishlist = self.get_object()
+        try:
+            product = wishlist.products.get(pk=pk)
+        except Product.DoesNotExist:
+            return Response({"detail": "Product not found in wishlist."}, status=404)
+        wishlist.products.remove(product)
+        products = wishlist.products.all()
+        serializer = WishlistProductSerializer(products, many=True)
+        return Response(serializer.data, status=200)

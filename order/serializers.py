@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from order.services import OrderService
-from order.models import Cart, CartItem, Order, OrderItem
+from order.models import Cart, CartItem, Order, OrderItem, Wishlist
 from product.models import Product
 
 
@@ -123,3 +123,18 @@ class OrderCreateSerializer(serializers.Serializer):
 
     def to_representation(self, instance):
         return OrderSerializer(instance).data
+
+
+class WishlistProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = ["id", "name", "price"]
+
+
+class WishlistSerializer(serializers.ModelSerializer):
+    products = WishlistProductSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Wishlist
+        fields = ["id", "user", "products", "created_at"]
+        read_only_fields = ["user"]
