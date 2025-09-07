@@ -11,11 +11,12 @@ from api.permissions import IsAdminOrReadOnly
 from product.permissions import IsReviewAuthorOrReadonly
 from product.paginations import DefaultPagination
 from product.filters import ProductFilter
-from product.models import Category, Product, ProductImage, Review
+from product.models import Category, Product, ProductImage, ProductStock, Review
 from product.serializers import (
     CategorySerializer,
     ProductSerializer,
     ProductImageSerializer,
+    ProductStockSerializer,
     ReviewSerializer,
 )
 
@@ -116,6 +117,17 @@ class ProductImageViewSet(ModelViewSet):
 
     def get_queryset(self):
         return ProductImage.objects.filter(product_id=self.kwargs.get("product_pk"))
+
+    def perform_create(self, serializer):
+        serializer.save(product_id=self.kwargs.get("product_pk"))
+
+
+class ProductStockViewSet(ModelViewSet):
+    serializer_class = ProductStockSerializer
+    permission_classes = [IsAdminOrReadOnly]
+
+    def get_queryset(self):
+        return ProductStock.objects.filter(product_id=self.kwargs.get("product_pk"))
 
     def perform_create(self, serializer):
         serializer.save(product_id=self.kwargs.get("product_pk"))
