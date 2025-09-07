@@ -4,6 +4,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db.models import Avg
 
 from product.validators import validate_file_size
+from cloudinary.models import CloudinaryField
 
 
 class Category(models.Model):
@@ -86,11 +87,12 @@ class ProductImage(models.Model):
         on_delete=models.CASCADE,
         related_name="images",
     )
-    image = models.ImageField(
-        upload_to="products/images",
-        validators=[validate_file_size],
+    image = CloudinaryField(
+        "image",
         blank=True,
         null=True,
+        validators=[validate_file_size],
+        folder="Kidora/products/images",
     )
 
     def __str__(self):
@@ -122,11 +124,12 @@ class ReviewImage(models.Model):
         on_delete=models.CASCADE,
         related_name="images",
     )
-    image = models.ImageField(
-        upload_to="reviews/images",
-        validators=[validate_file_size],
+    image = CloudinaryField(
+        "image",
         blank=True,
         null=True,
+        validators=[validate_file_size],
+        folder="Kidora/reviews/images",
     )
 
     def __str__(self):
