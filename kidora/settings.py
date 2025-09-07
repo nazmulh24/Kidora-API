@@ -85,7 +85,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "kidora.wsgi.application"
+WSGI_APPLICATION = "kidora.wsgi.app"
 
 
 # Database
