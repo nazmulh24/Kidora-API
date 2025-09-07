@@ -28,6 +28,8 @@ class CategoryViewSet(ModelViewSet):
 
 
 class EmptySerializer(serializers.Serializer):
+    class Meta:
+        ref_name = "ProductEmptySerializer"
     pass
 
 

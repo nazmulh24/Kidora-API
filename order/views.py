@@ -126,7 +126,12 @@ class WishlistViewSet(GenericViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        """DRF requirement, not used directly."""
+        """DRF requirement, not used directly. Short-circuit for schema generation and anonymous users."""
+        if (
+            getattr(self, "swagger_fake_view", False)
+            or not self.request.user.is_authenticated
+        ):
+            return Wishlist.objects.none()
         return Wishlist.objects.filter(user=self.request.user)
 
     def get_object(self):

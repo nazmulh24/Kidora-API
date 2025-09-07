@@ -6,6 +6,8 @@ from product.models import Product
 
 
 class EmptySerializer(serializers.Serializer):
+    class Meta:
+        ref_name = "OrderEmptySerializer"
     pass
 
 
