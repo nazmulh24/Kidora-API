@@ -7,6 +7,7 @@ from product.views import (
     ProductImageViewSet,
     ProductStockViewSet,
     ReviewViewSet,
+    ReviewImageViewSet,
 )
 from order.views import CartViewSet, CartItemViewSet, OrderViewSet, WishlistViewSet
 
@@ -22,12 +23,16 @@ product_router.register("reviews", ReviewViewSet, basename="product-review")
 product_router.register("images", ProductImageViewSet, basename="product-images")
 product_router.register("stocks", ProductStockViewSet, basename="product-stocks")
 
+review_router = routers.NestedDefaultRouter(product_router, "reviews", lookup="review")
+review_router.register("images", ReviewImageViewSet, basename="review-images")
+
 cart_router = routers.NestedDefaultRouter(router, "carts", lookup="cart")
 cart_router.register("items", CartItemViewSet, basename="cart-item")
 
 urlpatterns = [
     path("", include(router.urls)),
     path("", include(product_router.urls)),
+    path("", include(review_router.urls)),
     path("", include(cart_router.urls)),
     #
     path("auth/", include("djoser.urls")),

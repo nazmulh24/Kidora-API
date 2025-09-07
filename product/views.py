@@ -11,14 +11,23 @@ from api.permissions import IsAdminOrReadOnly
 from product.permissions import IsReviewAuthorOrReadonly
 from product.paginations import DefaultPagination
 from product.filters import ProductFilter
-from product.models import Category, Product, ProductImage, ProductStock, Review
+from product.models import (
+    Category,
+    Product,
+    ProductImage,
+    ProductStock,
+    Review,
+    ReviewImage,
+)
 from product.serializers import (
     CategorySerializer,
     ProductSerializer,
     ProductImageSerializer,
     ProductStockSerializer,
     ReviewSerializer,
+    ReviewImageSerializer,
 )
+
 
 from order.models import Wishlist
 from order.serializers import WishlistProductSerializer
@@ -145,3 +154,14 @@ class ReviewViewSet(ModelViewSet):
 
     def get_serializer_context(self):
         return {"product_id": self.kwargs.get("product_pk")}
+
+
+class ReviewImageViewSet(ModelViewSet):
+    serializer_class = ReviewImageSerializer
+    permission_classes = [IsReviewAuthorOrReadonly]
+
+    def get_queryset(self):
+        return ReviewImage.objects.filter(review_id=self.kwargs.get("review_pk"))
+
+    def perform_create(self, serializer):
+        serializer.save(review_id=self.kwargs.get("review_pk"))
