@@ -11,8 +11,13 @@ from api.permissions import IsAdminOrReadOnly
 from product.permissions import IsReviewAuthorOrReadonly
 from product.paginations import DefaultPagination
 from product.filters import ProductFilter
-from product.models import Category, Product, Review
-from product.serializers import CategorySerializer, ProductSerializer, ReviewSerializer
+from product.models import Category, Product, ProductImage, Review
+from product.serializers import (
+    CategorySerializer,
+    ProductSerializer,
+    ProductImageSerializer,
+    ReviewSerializer,
+)
 
 from order.models import Wishlist
 from order.serializers import WishlistProductSerializer
@@ -30,7 +35,6 @@ class CategoryViewSet(ModelViewSet):
 class EmptySerializer(serializers.Serializer):
     class Meta:
         ref_name = "ProductEmptySerializer"
-    pass
 
 
 class ProductViewSet(ModelViewSet):
@@ -104,6 +108,17 @@ class ProductViewSet(ModelViewSet):
         products = wishlist.products.all()
         serializer = WishlistProductSerializer(products, many=True)
         return Response(serializer.data)
+
+
+class ProductImageViewSet(ModelViewSet):
+    serializer_class = ProductImageSerializer
+    permission_classes = [IsAdminOrReadOnly]
+
+    def get_queryset(self):
+        return ProductImage.objects.filter(product_id=self.kwargs.get("product_pk"))
+
+    def perform_create(self, serializer):
+        serializer.save(product_id=self.kwargs.get("product_pk"))
 
 
 class ReviewViewSet(ModelViewSet):

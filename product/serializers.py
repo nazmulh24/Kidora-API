@@ -42,7 +42,7 @@ class ProductSerializer(serializers.ModelSerializer):
     average_rating = serializers.SerializerMethodField()
     images = ProductImageSerializer(many=True, required=False)
     is_in_wishlist = serializers.SerializerMethodField()
-    stocks = ProductStockSerializer(many=True, read_only=True)
+    stocks = ProductStockSerializer(many=True)
 
     class Meta:
         model = Product
@@ -69,7 +69,10 @@ class ProductSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         images_data = validated_data.pop("images", [])
+        stocks_data = validated_data.pop("stocks", [])
         product = Product.objects.create(**validated_data)
+        for stock_data in stocks_data:
+            ProductStock.objects.create(product=product, **stock_data)
         for image_data in images_data:
             ProductImage.objects.create(product=product, **image_data)
         return product
