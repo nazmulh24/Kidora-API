@@ -25,27 +25,8 @@ class Category(models.Model):
 class Product(models.Model):
     """Product in the store."""
 
-    XS = "XS"
-    S = "S"
-    M = "M"
-    L = "L"
-    XL = "XL"
-    XXL = "XXL"
-
-    STATUS_CHOICES = [
-        (XS, "XS"),
-        (S, "S"),
-        (M, "M"),
-        (L, "L"),
-        (XL, "XL"),
-        (XXL, "XXL"),
-    ]
-
     name = models.CharField(max_length=150)
     description = models.TextField(blank=True, null=True)
-    size = models.CharField(max_length=5, choices=STATUS_CHOICES, default=M)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    stock = models.PositiveIntegerField()
     video_url = models.URLField(
         blank=True,
         null=True,
@@ -61,8 +42,13 @@ class Product(models.Model):
         return self.name
 
     def is_in_stock(self):
-        """Return True if the product is in stock."""
-        return self.stock > 0
+        """Return True if any size is in stock."""
+        return self.stocks.filter(stock__gt=0).exists()
+
+    @property
+    def total_stock(self):
+        return self.stocks.aggregate(total=models.Sum("stock"))["total"] or 0
+
 
     def total_reviews(self):
         """Return the total number of reviews for this product."""
@@ -79,6 +65,31 @@ class Product(models.Model):
         ordering = ["-created_at"]
         verbose_name = "Product"
         verbose_name_plural = "Products"
+
+
+class ProductStock(models.Model):
+    SIZE_CHOICES = [
+        ("XS", "XS"),
+        ("S", "S"),
+        ("M", "M"),
+        ("L", "L"),
+        ("XL", "XL"),
+        ("XXL", "XXL"),
+    ]
+    product = models.ForeignKey(
+        Product, related_name="stocks", on_delete=models.CASCADE
+    )
+    size = models.CharField(max_length=5, choices=SIZE_CHOICES)
+    price = models.PositiveIntegerField()
+    stock = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return f"{self.product.name} - {self.size}: {self.stock} pcs"
+
+    class Meta:
+        unique_together = ("product", "size")
+        verbose_name = "Product Stock"
+        verbose_name_plural = "Product Stocks"
 
 
 class ProductImage(models.Model):

@@ -29,12 +29,40 @@
     "fields": {
       "name": "Elegant Silk Saree",
       "description": "Beautiful silk saree with traditional patterns.",
-      "price": "2499.00",
-      "stock": 20,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 1,
+    "fields": { "product": 1, "size": "XS", "price": 1899, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 2,
+    "fields": { "product": 1, "size": "S", "price": 1899, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 3,
+    "fields": { "product": 1, "size": "M", "price": 1999, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 4,
+    "fields": { "product": 1, "size": "L", "price": 1999, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 5,
+    "fields": { "product": 1, "size": "XL", "price": 2099, "stock": 20 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 6,
+    "fields": { "product": 1, "size": "XXL", "price": 2099, "stock": 15 }
   },
   {
     "model": "product.Product",
@@ -42,12 +70,40 @@
     "fields": {
       "name": "Designer Kurti",
       "description": "Trendy designer kurti for casual and party wear.",
-      "price": "1299.00",
-      "stock": 35,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 7,
+    "fields": { "product": 2, "size": "XS", "price": 1499, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 8,
+    "fields": { "product": 2, "size": "S", "price": 1499, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 9,
+    "fields": { "product": 2, "size": "M", "price": 1599, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 10,
+    "fields": { "product": 2, "size": "L", "price": 1599, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 11,
+    "fields": { "product": 2, "size": "XL", "price": 1699, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 12,
+    "fields": { "product": 2, "size": "XXL", "price": 1699, "stock": 20 }
   },
   {
     "model": "product.Product",
@@ -55,12 +111,40 @@
     "fields": {
       "name": "Cotton Palazzo Set",
       "description": "Comfortable cotton palazzo set for daily use.",
-      "price": "999.00",
-      "stock": 40,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 13,
+    "fields": { "product": 3, "size": "XS", "price": 1299, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 14,
+    "fields": { "product": 3, "size": "S", "price": 1299, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 15,
+    "fields": { "product": 3, "size": "M", "price": 1399, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 16,
+    "fields": { "product": 3, "size": "L", "price": 1399, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 17,
+    "fields": { "product": 3, "size": "XL", "price": 1499, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 18,
+    "fields": { "product": 3, "size": "XXL", "price": 1499, "stock": 25 }
   },
   {
     "model": "product.Product",
@@ -68,12 +152,40 @@
     "fields": {
       "name": "Embroidered Dupatta",
       "description": "Elegant dupatta with fine embroidery.",
-      "price": "499.00",
-      "stock": 50,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 19,
+    "fields": { "product": 4, "size": "XS", "price": 799, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 20,
+    "fields": { "product": 4, "size": "S", "price": 799, "stock": 60 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 21,
+    "fields": { "product": 4, "size": "M", "price": 899, "stock": 70 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 22,
+    "fields": { "product": 4, "size": "L", "price": 899, "stock": 65 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 23,
+    "fields": { "product": 4, "size": "XL", "price": 999, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 24,
+    "fields": { "product": 4, "size": "XXL", "price": 999, "stock": 35 }
   },
   {
     "model": "product.Product",
@@ -81,12 +193,40 @@
     "fields": {
       "name": "Party Gown",
       "description": "Stylish party gown for special occasions.",
-      "price": "1899.00",
-      "stock": 15,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 25,
+    "fields": { "product": 5, "size": "XS", "price": 2999, "stock": 15 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 26,
+    "fields": { "product": 5, "size": "S", "price": 2999, "stock": 20 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 27,
+    "fields": { "product": 5, "size": "M", "price": 3199, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 28,
+    "fields": { "product": 5, "size": "L", "price": 3199, "stock": 20 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 29,
+    "fields": { "product": 5, "size": "XL", "price": 3399, "stock": 15 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 30,
+    "fields": { "product": 5, "size": "XXL", "price": 3399, "stock": 10 }
   },
   {
     "model": "product.Product",
@@ -94,12 +234,40 @@
     "fields": {
       "name": "Chiffon Scarf",
       "description": "Lightweight chiffon scarf in vibrant colors.",
-      "price": "299.00",
-      "stock": 60,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 31,
+    "fields": { "product": 6, "size": "XS", "price": 499, "stock": 100 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 32,
+    "fields": { "product": 6, "size": "S", "price": 499, "stock": 120 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 33,
+    "fields": { "product": 6, "size": "M", "price": 549, "stock": 150 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 34,
+    "fields": { "product": 6, "size": "L", "price": 549, "stock": 130 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 35,
+    "fields": { "product": 6, "size": "XL", "price": 599, "stock": 90 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 36,
+    "fields": { "product": 6, "size": "XXL", "price": 599, "stock": 80 }
   },
   {
     "model": "product.Product",
@@ -107,12 +275,40 @@
     "fields": {
       "name": "Formal Blazer",
       "description": "Classic formal blazer for women.",
-      "price": "1599.00",
-      "stock": 18,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 37,
+    "fields": { "product": 7, "size": "XS", "price": 2499, "stock": 20 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 38,
+    "fields": { "product": 7, "size": "S", "price": 2499, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 39,
+    "fields": { "product": 7, "size": "M", "price": 2599, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 40,
+    "fields": { "product": 7, "size": "L", "price": 2599, "stock": 28 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 41,
+    "fields": { "product": 7, "size": "XL", "price": 2699, "stock": 18 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 42,
+    "fields": { "product": 7, "size": "XXL", "price": 2699, "stock": 15 }
   },
   {
     "model": "product.Product",
@@ -120,12 +316,40 @@
     "fields": {
       "name": "Denim Trucker Jacket",
       "description": "Trendy denim trucker jacket for a casual look.",
-      "price": "1399.00",
-      "stock": 25,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 43,
+    "fields": { "product": 8, "size": "XS", "price": 1999, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 44,
+    "fields": { "product": 8, "size": "S", "price": 1999, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 45,
+    "fields": { "product": 8, "size": "M", "price": 2099, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 46,
+    "fields": { "product": 8, "size": "L", "price": 2099, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 47,
+    "fields": { "product": 8, "size": "XL", "price": 2199, "stock": 20 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 48,
+    "fields": { "product": 8, "size": "XXL", "price": 2199, "stock": 18 }
   },
   {
     "model": "product.Product",
@@ -133,12 +357,40 @@
     "fields": {
       "name": "Printed Maxi Dress",
       "description": "Flowy printed maxi dress for summer.",
-      "price": "1199.00",
-      "stock": 30,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 49,
+    "fields": { "product": 9, "size": "XS", "price": 1799, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 50,
+    "fields": { "product": 9, "size": "S", "price": 1799, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 51,
+    "fields": { "product": 9, "size": "M", "price": 1899, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 52,
+    "fields": { "product": 9, "size": "L", "price": 1899, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 53,
+    "fields": { "product": 9, "size": "XL", "price": 1999, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 54,
+    "fields": { "product": 9, "size": "XXL", "price": 1999, "stock": 20 }
   },
   {
     "model": "product.Product",
@@ -146,12 +398,40 @@
     "fields": {
       "name": "Office Wear Shirt",
       "description": "Smart office wear shirt for women.",
-      "price": "799.00",
-      "stock": 45,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 55,
+    "fields": { "product": 10, "size": "XS", "price": 1399, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 56,
+    "fields": { "product": 10, "size": "S", "price": 1399, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 57,
+    "fields": { "product": 10, "size": "M", "price": 1499, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 58,
+    "fields": { "product": 10, "size": "L", "price": 1499, "stock": 48 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 59,
+    "fields": { "product": 10, "size": "XL", "price": 1599, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 60,
+    "fields": { "product": 10, "size": "XXL", "price": 1599, "stock": 30 }
   },
   {
     "model": "product.Product",
@@ -159,12 +439,40 @@
     "fields": {
       "name": "Casual Trousers",
       "description": "Comfortable casual trousers for daily use.",
-      "price": "899.00",
-      "stock": 38,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 61,
+    "fields": { "product": 11, "size": "XS", "price": 1199, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 62,
+    "fields": { "product": 11, "size": "S", "price": 1199, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 63,
+    "fields": { "product": 11, "size": "M", "price": 1299, "stock": 60 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 64,
+    "fields": { "product": 11, "size": "L", "price": 1299, "stock": 55 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 65,
+    "fields": { "product": 11, "size": "XL", "price": 1399, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 66,
+    "fields": { "product": 11, "size": "XXL", "price": 1399, "stock": 35 }
   },
   {
     "model": "product.Product",
@@ -172,12 +480,40 @@
     "fields": {
       "name": "Woolen Cardigan",
       "description": "Warm woolen cardigan for winter.",
-      "price": "1099.00",
-      "stock": 22,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 67,
+    "fields": { "product": 12, "size": "XS", "price": 1699, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 68,
+    "fields": { "product": 12, "size": "S", "price": 1699, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 69,
+    "fields": { "product": 12, "size": "M", "price": 1799, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 70,
+    "fields": { "product": 12, "size": "L", "price": 1799, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 71,
+    "fields": { "product": 12, "size": "XL", "price": 1899, "stock": 28 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 72,
+    "fields": { "product": 12, "size": "XXL", "price": 1899, "stock": 22 }
   },
   {
     "model": "product.Product",
@@ -185,12 +521,40 @@
     "fields": {
       "name": "Ethnic Skirt",
       "description": "Colorful ethnic skirt for festive occasions.",
-      "price": "799.00",
-      "stock": 27,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 73,
+    "fields": { "product": 13, "size": "XS", "price": 1499, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 74,
+    "fields": { "product": 13, "size": "S", "price": 1499, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 75,
+    "fields": { "product": 13, "size": "M", "price": 1599, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 76,
+    "fields": { "product": 13, "size": "L", "price": 1599, "stock": 42 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 77,
+    "fields": { "product": 13, "size": "XL", "price": 1699, "stock": 32 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 78,
+    "fields": { "product": 13, "size": "XXL", "price": 1699, "stock": 28 }
   },
   {
     "model": "product.Product",
@@ -198,12 +562,40 @@
     "fields": {
       "name": "Linen Pants",
       "description": "Breathable linen pants for summer comfort.",
-      "price": "999.00",
-      "stock": 33,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 79,
+    "fields": { "product": 14, "size": "XS", "price": 1299, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 80,
+    "fields": { "product": 14, "size": "S", "price": 1299, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 81,
+    "fields": { "product": 14, "size": "M", "price": 1399, "stock": 55 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 82,
+    "fields": { "product": 14, "size": "L", "price": 1399, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 83,
+    "fields": { "product": 14, "size": "XL", "price": 1499, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 84,
+    "fields": { "product": 14, "size": "XXL", "price": 1499, "stock": 32 }
   },
   {
     "model": "product.Product",
@@ -211,26 +603,81 @@
     "fields": {
       "name": "Classic Black Dress",
       "description": "Timeless classic black dress for all occasions.",
-      "price": "1499.00",
-      "stock": 19,
       "category": 1,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
   },
-
+  {
+    "model": "product.ProductStock",
+    "pk": 85,
+    "fields": { "product": 15, "size": "XS", "price": 2299, "stock": 22 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 86,
+    "fields": { "product": 15, "size": "S", "price": 2299, "stock": 28 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 87,
+    "fields": { "product": 15, "size": "M", "price": 2399, "stock": 32 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 88,
+    "fields": { "product": 15, "size": "L", "price": 2399, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 89,
+    "fields": { "product": 15, "size": "XL", "price": 2499, "stock": 20 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 90,
+    "fields": { "product": 15, "size": "XXL", "price": 2499, "stock": 18 }
+  },
   {
     "model": "product.Product",
     "pk": 16,
     "fields": {
       "name": "Formal White Shirt",
       "description": "Classic formal white shirt for men.",
-      "price": "899.00",
-      "stock": 30,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 91,
+    "fields": { "product": 16, "size": "XS", "price": 1599, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 92,
+    "fields": { "product": 16, "size": "S", "price": 1599, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 93,
+    "fields": { "product": 16, "size": "M", "price": 1699, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 94,
+    "fields": { "product": 16, "size": "L", "price": 1699, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 95,
+    "fields": { "product": 16, "size": "XL", "price": 1799, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 96,
+    "fields": { "product": 16, "size": "XXL", "price": 1799, "stock": 30 }
   },
   {
     "model": "product.Product",
@@ -238,12 +685,40 @@
     "fields": {
       "name": "Slim Fit Jeans",
       "description": "Trendy slim fit jeans for a modern look.",
-      "price": "1199.00",
-      "stock": 25,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 97,
+    "fields": { "product": 17, "size": "XS", "price": 1899, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 98,
+    "fields": { "product": 17, "size": "S", "price": 1899, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 99,
+    "fields": { "product": 17, "size": "M", "price": 1999, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 100,
+    "fields": { "product": 17, "size": "L", "price": 1999, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 101,
+    "fields": { "product": 17, "size": "XL", "price": 2099, "stock": 28 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 102,
+    "fields": { "product": 17, "size": "XXL", "price": 2099, "stock": 25 }
   },
   {
     "model": "product.Product",
@@ -251,12 +726,40 @@
     "fields": {
       "name": "Cotton Polo T-Shirt",
       "description": "Comfortable cotton polo t-shirt for men.",
-      "price": "699.00",
-      "stock": 40,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 103,
+    "fields": { "product": 18, "size": "XS", "price": 999, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 104,
+    "fields": { "product": 18, "size": "S", "price": 999, "stock": 60 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 105,
+    "fields": { "product": 18, "size": "M", "price": 1099, "stock": 70 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 106,
+    "fields": { "product": 18, "size": "L", "price": 1099, "stock": 65 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 107,
+    "fields": { "product": 18, "size": "XL", "price": 1199, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 108,
+    "fields": { "product": 18, "size": "XXL", "price": 1199, "stock": 45 }
   },
   {
     "model": "product.Product",
@@ -264,12 +767,40 @@
     "fields": {
       "name": "Checked Casual Shirt",
       "description": "Casual checked shirt for everyday wear.",
-      "price": "799.00",
-      "stock": 35,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 109,
+    "fields": { "product": 19, "size": "XS", "price": 1499, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 110,
+    "fields": { "product": 19, "size": "S", "price": 1499, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 111,
+    "fields": { "product": 19, "size": "M", "price": 1599, "stock": 55 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 112,
+    "fields": { "product": 19, "size": "L", "price": 1599, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 113,
+    "fields": { "product": 19, "size": "XL", "price": 1699, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 114,
+    "fields": { "product": 19, "size": "XXL", "price": 1699, "stock": 35 }
   },
   {
     "model": "product.Product",
@@ -277,12 +808,40 @@
     "fields": {
       "name": "Classic Denim Jacket",
       "description": "Classic denim jacket for men.",
-      "price": "1499.00",
-      "stock": 20,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 115,
+    "fields": { "product": 20, "size": "XS", "price": 2199, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 116,
+    "fields": { "product": 20, "size": "S", "price": 2199, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 117,
+    "fields": { "product": 20, "size": "M", "price": 2299, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 118,
+    "fields": { "product": 20, "size": "L", "price": 2299, "stock": 32 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 119,
+    "fields": { "product": 20, "size": "XL", "price": 2399, "stock": 22 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 120,
+    "fields": { "product": 20, "size": "XXL", "price": 2399, "stock": 20 }
   },
   {
     "model": "product.Product",
@@ -290,12 +849,40 @@
     "fields": {
       "name": "Formal Trousers",
       "description": "Elegant formal trousers for office wear.",
-      "price": "999.00",
-      "stock": 28,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 121,
+    "fields": { "product": 21, "size": "XS", "price": 1799, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 122,
+    "fields": { "product": 21, "size": "S", "price": 1799, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 123,
+    "fields": { "product": 21, "size": "M", "price": 1899, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 124,
+    "fields": { "product": 21, "size": "L", "price": 1899, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 125,
+    "fields": { "product": 21, "size": "XL", "price": 1999, "stock": 28 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 126,
+    "fields": { "product": 21, "size": "XXL", "price": 1999, "stock": 25 }
   },
   {
     "model": "product.Product",
@@ -303,12 +890,40 @@
     "fields": {
       "name": "Leather Belt",
       "description": "Premium quality leather belt for men.",
-      "price": "499.00",
-      "stock": 50,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 127,
+    "fields": { "product": 22, "size": "XS", "price": 899, "stock": 60 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 128,
+    "fields": { "product": 22, "size": "S", "price": 899, "stock": 70 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 129,
+    "fields": { "product": 22, "size": "M", "price": 999, "stock": 80 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 130,
+    "fields": { "product": 22, "size": "L", "price": 999, "stock": 75 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 131,
+    "fields": { "product": 22, "size": "XL", "price": 1099, "stock": 60 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 132,
+    "fields": { "product": 22, "size": "XXL", "price": 1099, "stock": 55 }
   },
   {
     "model": "product.Product",
@@ -316,12 +931,40 @@
     "fields": {
       "name": "Winter Sweater",
       "description": "Warm winter sweater for men.",
-      "price": "1299.00",
-      "stock": 18,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 133,
+    "fields": { "product": 23, "size": "XS", "price": 1999, "stock": 28 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 134,
+    "fields": { "product": 23, "size": "S", "price": 1999, "stock": 32 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 135,
+    "fields": { "product": 23, "size": "M", "price": 2099, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 136,
+    "fields": { "product": 23, "size": "L", "price": 2099, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 137,
+    "fields": { "product": 23, "size": "XL", "price": 2199, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 138,
+    "fields": { "product": 23, "size": "XXL", "price": 2199, "stock": 22 }
   },
   {
     "model": "product.Product",
@@ -329,12 +972,40 @@
     "fields": {
       "name": "Sports Shorts",
       "description": "Comfortable sports shorts for workouts.",
-      "price": "599.00",
-      "stock": 32,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 139,
+    "fields": { "product": 24, "size": "XS", "price": 799, "stock": 55 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 140,
+    "fields": { "product": 24, "size": "S", "price": 799, "stock": 65 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 141,
+    "fields": { "product": 24, "size": "M", "price": 899, "stock": 75 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 142,
+    "fields": { "product": 24, "size": "L", "price": 899, "stock": 70 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 143,
+    "fields": { "product": 24, "size": "XL", "price": 999, "stock": 55 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 144,
+    "fields": { "product": 24, "size": "XXL", "price": 999, "stock": 50 }
   },
   {
     "model": "product.Product",
@@ -342,12 +1013,40 @@
     "fields": {
       "name": "Graphic Tee",
       "description": "Trendy graphic tee for casual outings.",
-      "price": "499.00",
-      "stock": 45,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 145,
+    "fields": { "product": 25, "size": "XS", "price": 899, "stock": 70 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 146,
+    "fields": { "product": 25, "size": "S", "price": 899, "stock": 80 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 147,
+    "fields": { "product": 25, "size": "M", "price": 999, "stock": 90 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 148,
+    "fields": { "product": 25, "size": "L", "price": 999, "stock": 85 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 149,
+    "fields": { "product": 25, "size": "XL", "price": 1099, "stock": 70 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 150,
+    "fields": { "product": 25, "size": "XXL", "price": 1099, "stock": 65 }
   },
   {
     "model": "product.Product",
@@ -355,12 +1054,40 @@
     "fields": {
       "name": "Cotton Kurta",
       "description": "Traditional cotton kurta for men.",
-      "price": "899.00",
-      "stock": 22,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 151,
+    "fields": { "product": 26, "size": "XS", "price": 1399, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 152,
+    "fields": { "product": 26, "size": "S", "price": 1399, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 153,
+    "fields": { "product": 26, "size": "M", "price": 1499, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 154,
+    "fields": { "product": 26, "size": "L", "price": 1499, "stock": 48 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 155,
+    "fields": { "product": 26, "size": "XL", "price": 1599, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 156,
+    "fields": { "product": 26, "size": "XXL", "price": 1599, "stock": 32 }
   },
   {
     "model": "product.Product",
@@ -368,12 +1095,40 @@
     "fields": {
       "name": "Cargo Pants",
       "description": "Functional cargo pants with multiple pockets.",
-      "price": "1099.00",
-      "stock": 27,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 157,
+    "fields": { "product": 27, "size": "XS", "price": 1699, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 158,
+    "fields": { "product": 27, "size": "S", "price": 1699, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 159,
+    "fields": { "product": 27, "size": "M", "price": 1799, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 160,
+    "fields": { "product": 27, "size": "L", "price": 1799, "stock": 42 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 161,
+    "fields": { "product": 27, "size": "XL", "price": 1899, "stock": 32 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 162,
+    "fields": { "product": 27, "size": "XXL", "price": 1899, "stock": 28 }
   },
   {
     "model": "product.Product",
@@ -381,12 +1136,40 @@
     "fields": {
       "name": "Woolen Muffler",
       "description": "Soft woolen muffler for winter.",
-      "price": "399.00",
-      "stock": 33,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 163,
+    "fields": { "product": 28, "size": "XS", "price": 699, "stock": 80 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 164,
+    "fields": { "product": 28, "size": "S", "price": 699, "stock": 90 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 165,
+    "fields": { "product": 28, "size": "M", "price": 799, "stock": 100 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 166,
+    "fields": { "product": 28, "size": "L", "price": 799, "stock": 95 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 167,
+    "fields": { "product": 28, "size": "XL", "price": 899, "stock": 75 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 168,
+    "fields": { "product": 28, "size": "XXL", "price": 899, "stock": 70 }
   },
   {
     "model": "product.Product",
@@ -394,12 +1177,40 @@
     "fields": {
       "name": "Classic Suit",
       "description": "Classic suit for formal occasions.",
-      "price": "2999.00",
-      "stock": 19,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 169,
+    "fields": { "product": 29, "size": "XS", "price": 4999, "stock": 15 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 170,
+    "fields": { "product": 29, "size": "S", "price": 4999, "stock": 20 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 171,
+    "fields": { "product": 29, "size": "M", "price": 5299, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 172,
+    "fields": { "product": 29, "size": "L", "price": 5299, "stock": 22 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 173,
+    "fields": { "product": 29, "size": "XL", "price": 5599, "stock": 18 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 174,
+    "fields": { "product": 29, "size": "XXL", "price": 5599, "stock": 15 }
   },
   {
     "model": "product.Product",
@@ -407,12 +1218,40 @@
     "fields": {
       "name": "Men's Hooded Jacket",
       "description": "Warm hooded jacket for men, perfect for winter.",
-      "price": "1799.00",
-      "stock": 21,
       "category": 2,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 175,
+    "fields": { "product": 30, "size": "XS", "price": 2599, "stock": 20 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 176,
+    "fields": { "product": 30, "size": "S", "price": 2599, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 177,
+    "fields": { "product": 30, "size": "M", "price": 2699, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 178,
+    "fields": { "product": 30, "size": "L", "price": 2699, "stock": 28 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 179,
+    "fields": { "product": 30, "size": "XL", "price": 2799, "stock": 20 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 180,
+    "fields": { "product": 30, "size": "XXL", "price": 2799, "stock": 18 }
   },
   {
     "model": "product.Product",
@@ -420,12 +1259,40 @@
     "fields": {
       "name": "Kids Graphic Tee",
       "description": "Fun graphic tee for kids.",
-      "price": "349.00",
-      "stock": 40,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 181,
+    "fields": { "product": 31, "size": "XS", "price": 599, "stock": 60 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 182,
+    "fields": { "product": 31, "size": "S", "price": 599, "stock": 70 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 183,
+    "fields": { "product": 31, "size": "M", "price": 649, "stock": 80 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 184,
+    "fields": { "product": 31, "size": "L", "price": 649, "stock": 75 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 185,
+    "fields": { "product": 31, "size": "XL", "price": 699, "stock": 60 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 186,
+    "fields": { "product": 31, "size": "XXL", "price": 699, "stock": 55 }
   },
   {
     "model": "product.Product",
@@ -433,12 +1300,40 @@
     "fields": {
       "name": "Boys Cargo Shorts",
       "description": "Durable cargo shorts for boys.",
-      "price": "399.00",
-      "stock": 35,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 187,
+    "fields": { "product": 32, "size": "XS", "price": 799, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 188,
+    "fields": { "product": 32, "size": "S", "price": 799, "stock": 55 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 189,
+    "fields": { "product": 32, "size": "M", "price": 849, "stock": 65 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 190,
+    "fields": { "product": 32, "size": "L", "price": 849, "stock": 60 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 191,
+    "fields": { "product": 32, "size": "XL", "price": 899, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 192,
+    "fields": { "product": 32, "size": "XXL", "price": 899, "stock": 45 }
   },
   {
     "model": "product.Product",
@@ -446,12 +1341,40 @@
     "fields": {
       "name": "Girls Summer Dress",
       "description": "Light and colorful summer dress for girls.",
-      "price": "599.00",
-      "stock": 28,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 193,
+    "fields": { "product": 33, "size": "XS", "price": 999, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 194,
+    "fields": { "product": 33, "size": "S", "price": 999, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 195,
+    "fields": { "product": 33, "size": "M", "price": 1099, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 196,
+    "fields": { "product": 33, "size": "L", "price": 1099, "stock": 48 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 197,
+    "fields": { "product": 33, "size": "XL", "price": 1199, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 198,
+    "fields": { "product": 33, "size": "XXL", "price": 1199, "stock": 35 }
   },
   {
     "model": "product.Product",
@@ -459,12 +1382,40 @@
     "fields": {
       "name": "Kids Rain Boots",
       "description": "Waterproof rain boots for kids.",
-      "price": "299.00",
-      "stock": 22,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 199,
+    "fields": { "product": 34, "size": "XS", "price": 1299, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 200,
+    "fields": { "product": 34, "size": "S", "price": 1299, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 201,
+    "fields": { "product": 34, "size": "M", "price": 1399, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 202,
+    "fields": { "product": 34, "size": "L", "price": 1399, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 203,
+    "fields": { "product": 34, "size": "XL", "price": 1499, "stock": 28 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 204,
+    "fields": { "product": 34, "size": "XXL", "price": 1499, "stock": 25 }
   },
   {
     "model": "product.Product",
@@ -472,12 +1423,40 @@
     "fields": {
       "name": "Boys Sports Set",
       "description": "Active sports set for boys.",
-      "price": "699.00",
-      "stock": 30,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 205,
+    "fields": { "product": 35, "size": "XS", "price": 1499, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 206,
+    "fields": { "product": 35, "size": "S", "price": 1499, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 207,
+    "fields": { "product": 35, "size": "M", "price": 1599, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 208,
+    "fields": { "product": 35, "size": "L", "price": 1599, "stock": 32 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 209,
+    "fields": { "product": 35, "size": "XL", "price": 1699, "stock": 22 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 210,
+    "fields": { "product": 35, "size": "XXL", "price": 1699, "stock": 20 }
   },
   {
     "model": "product.Product",
@@ -485,12 +1464,40 @@
     "fields": {
       "name": "Girls Leggings",
       "description": "Stretchy leggings for girls.",
-      "price": "349.00",
-      "stock": 36,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 211,
+    "fields": { "product": 36, "size": "XS", "price": 499, "stock": 70 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 212,
+    "fields": { "product": 36, "size": "S", "price": 499, "stock": 80 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 213,
+    "fields": { "product": 36, "size": "M", "price": 549, "stock": 90 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 214,
+    "fields": { "product": 36, "size": "L", "price": 549, "stock": 85 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 215,
+    "fields": { "product": 36, "size": "XL", "price": 599, "stock": 70 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 216,
+    "fields": { "product": 36, "size": "XXL", "price": 599, "stock": 65 }
   },
   {
     "model": "product.Product",
@@ -498,12 +1505,40 @@
     "fields": {
       "name": "Kids Woolen Sweater",
       "description": "Warm woolen sweater for kids.",
-      "price": "499.00",
-      "stock": 25,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 217,
+    "fields": { "product": 37, "size": "XS", "price": 1199, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 218,
+    "fields": { "product": 37, "size": "S", "price": 1199, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 219,
+    "fields": { "product": 37, "size": "M", "price": 1299, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 220,
+    "fields": { "product": 37, "size": "L", "price": 1299, "stock": 42 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 221,
+    "fields": { "product": 37, "size": "XL", "price": 1399, "stock": 32 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 222,
+    "fields": { "product": 37, "size": "XXL", "price": 1399, "stock": 28 }
   },
   {
     "model": "product.Product",
@@ -511,12 +1546,40 @@
     "fields": {
       "name": "Girls Party Frock",
       "description": "Beautiful party frock for girls.",
-      "price": "799.00",
-      "stock": 32,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 223,
+    "fields": { "product": 38, "size": "XS", "price": 1599, "stock": 28 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 224,
+    "fields": { "product": 38, "size": "S", "price": 1599, "stock": 32 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 225,
+    "fields": { "product": 38, "size": "M", "price": 1699, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 226,
+    "fields": { "product": 38, "size": "L", "price": 1699, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 227,
+    "fields": { "product": 38, "size": "XL", "price": 1799, "stock": 25 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 228,
+    "fields": { "product": 38, "size": "XXL", "price": 1799, "stock": 22 }
   },
   {
     "model": "product.Product",
@@ -524,12 +1587,40 @@
     "fields": {
       "name": "Kids Denim Jacket",
       "description": "Trendy denim jacket for boys.",
-      "price": "899.00",
-      "stock": 18,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 229,
+    "fields": { "product": 39, "size": "XS", "price": 1399, "stock": 30 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 230,
+    "fields": { "product": 39, "size": "S", "price": 1399, "stock": 35 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 231,
+    "fields": { "product": 39, "size": "M", "price": 1499, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 232,
+    "fields": { "product": 39, "size": "L", "price": 1499, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 233,
+    "fields": { "product": 39, "size": "XL", "price": 1599, "stock": 28 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 234,
+    "fields": { "product": 39, "size": "XXL", "price": 1599, "stock": 25 }
   },
   {
     "model": "product.Product",
@@ -537,12 +1628,40 @@
     "fields": {
       "name": "Kids Pajama Set",
       "description": "Soft pajama set for kids' bedtime.",
-      "price": "399.00",
-      "stock": 27,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 235,
+    "fields": { "product": 40, "size": "XS", "price": 899, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 236,
+    "fields": { "product": 40, "size": "S", "price": 899, "stock": 55 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 237,
+    "fields": { "product": 40, "size": "M", "price": 949, "stock": 65 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 238,
+    "fields": { "product": 40, "size": "L", "price": 949, "stock": 60 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 239,
+    "fields": { "product": 40, "size": "XL", "price": 999, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 240,
+    "fields": { "product": 40, "size": "XXL", "price": 999, "stock": 45 }
   },
   {
     "model": "product.Product",
@@ -550,12 +1669,40 @@
     "fields": {
       "name": "Girls Cardigan",
       "description": "Cozy cardigan for girls.",
-      "price": "499.00",
-      "stock": 33,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 241,
+    "fields": { "product": 41, "size": "XS", "price": 1099, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 242,
+    "fields": { "product": 41, "size": "S", "price": 1099, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 243,
+    "fields": { "product": 41, "size": "M", "price": 1199, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 244,
+    "fields": { "product": 41, "size": "L", "price": 1199, "stock": 48 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 245,
+    "fields": { "product": 41, "size": "XL", "price": 1299, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 246,
+    "fields": { "product": 41, "size": "XXL", "price": 1299, "stock": 35 }
   },
   {
     "model": "product.Product",
@@ -563,12 +1710,40 @@
     "fields": {
       "name": "Boys Track Pants",
       "description": "Comfortable track pants for boys.",
-      "price": "399.00",
-      "stock": 29,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 247,
+    "fields": { "product": 42, "size": "XS", "price": 899, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 248,
+    "fields": { "product": 42, "size": "S", "price": 899, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 249,
+    "fields": { "product": 42, "size": "M", "price": 999, "stock": 60 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 250,
+    "fields": { "product": 42, "size": "L", "price": 999, "stock": 55 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 251,
+    "fields": { "product": 42, "size": "XL", "price": 1099, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 252,
+    "fields": { "product": 42, "size": "XXL", "price": 1099, "stock": 40 }
   },
   {
     "model": "product.Product",
@@ -576,12 +1751,40 @@
     "fields": {
       "name": "Kids Beanie",
       "description": "Warm beanie for kids' winter days.",
-      "price": "199.00",
-      "stock": 31,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 253,
+    "fields": { "product": 43, "size": "XS", "price": 399, "stock": 100 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 254,
+    "fields": { "product": 43, "size": "S", "price": 399, "stock": 120 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 255,
+    "fields": { "product": 43, "size": "M", "price": 449, "stock": 150 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 256,
+    "fields": { "product": 43, "size": "L", "price": 449, "stock": 130 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 257,
+    "fields": { "product": 43, "size": "XL", "price": 499, "stock": 100 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 258,
+    "fields": { "product": 43, "size": "XXL", "price": 499, "stock": 90 }
   },
   {
     "model": "product.Product",
@@ -589,12 +1792,40 @@
     "fields": {
       "name": "Girls Skirt",
       "description": "Pretty skirt for girls' outings.",
-      "price": "349.00",
-      "stock": 21,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 259,
+    "fields": { "product": 44, "size": "XS", "price": 699, "stock": 55 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 260,
+    "fields": { "product": 44, "size": "S", "price": 699, "stock": 65 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 261,
+    "fields": { "product": 44, "size": "M", "price": 749, "stock": 75 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 262,
+    "fields": { "product": 44, "size": "L", "price": 749, "stock": 70 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 263,
+    "fields": { "product": 44, "size": "XL", "price": 799, "stock": 60 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 264,
+    "fields": { "product": 44, "size": "XXL", "price": 799, "stock": 55 }
   },
   {
     "model": "product.Product",
@@ -602,11 +1833,39 @@
     "fields": {
       "name": "Kids School Bag",
       "description": "Colorful school bag for kids.",
-      "price": "599.00",
-      "stock": 26,
       "category": 3,
       "created_at": "2025-02-05T02:45:04.629624",
       "updated_at": "2025-02-08T02:45:04.629624"
     }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 265,
+    "fields": { "product": 45, "size": "XS", "price": 999, "stock": 40 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 266,
+    "fields": { "product": 45, "size": "S", "price": 999, "stock": 45 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 267,
+    "fields": { "product": 45, "size": "M", "price": 1099, "stock": 50 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 268,
+    "fields": { "product": 45, "size": "L", "price": 1099, "stock": 48 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 269,
+    "fields": { "product": 45, "size": "XL", "price": 1199, "stock": 38 }
+  },
+  {
+    "model": "product.ProductStock",
+    "pk": 270,
+    "fields": { "product": 45, "size": "XXL", "price": 1199, "stock": 35 }
   }
 ]

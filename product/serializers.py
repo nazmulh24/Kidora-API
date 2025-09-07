@@ -1,6 +1,13 @@
 from rest_framework import serializers
 from decimal import Decimal
-from product.models import Category, Product, ProductImage, Review, ReviewImage
+from product.models import (
+    Category,
+    Product,
+    ProductStock,
+    ProductImage,
+    Review,
+    ReviewImage,
+)
 from order.models import Wishlist
 
 from django.contrib.auth import get_user_model
@@ -29,6 +36,7 @@ class ProductSerializer(serializers.ModelSerializer):
     average_rating = serializers.SerializerMethodField()
     images = ProductImageSerializer(many=True, required=False)
     is_in_wishlist = serializers.SerializerMethodField()
+    sizes = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
@@ -36,18 +44,25 @@ class ProductSerializer(serializers.ModelSerializer):
             "id",
             "name",
             "description",
-            "size",
-            "price",
+            "sizes",
             "is_in_stock",
-            "stock",
+            "total_stock",
             "category",
-            "price_with_tax",
             "total_reviews",
             "average_rating",
             "images",
             "video_url",
             "is_in_wishlist",
         ]
+
+    def get_sizes(self, obj):
+        """Return all sizes; missing ones should be null"""
+        all_sizes = ["XS", "S", "M", "L", "XL", "XXL"]
+        stocks = {
+            stock.size: {"price": stock.price, "stock": stock.stock}
+            for stock in obj.stocks.all()
+        }
+        return {size: stocks.get(size, None) for size in all_sizes}
 
     def get_is_in_wishlist(self, obj):
         user = self.context.get("request").user if self.context.get("request") else None
@@ -67,12 +82,6 @@ class ProductSerializer(serializers.ModelSerializer):
 
     def get_average_rating(self, obj):
         return obj.average_rating()
-
-    price_with_tax = serializers.SerializerMethodField(method_name="calculate_tax")
-
-    # --> 15% tax
-    def calculate_tax(self, product):
-        return round(product.price * Decimal(1.15), 2)
 
     def validate_price(self, price):
         if price < 0:
